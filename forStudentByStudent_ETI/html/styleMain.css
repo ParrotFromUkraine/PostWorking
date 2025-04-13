@@ -1,0 +1,143 @@
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #393954; /* Основний фон — як у верхній частині */
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Контейнер */
+  .container {
+    height: 600px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Шапка */
+  .header {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 0;
+    background-color: #393954; /* Колір шапки */
+    width: 100%;
+  }
+
+  /* Головна частина */
+  .main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -20px; /* Щоб блок наклався на верхній фон */
+  }
+  
+  /* Закруглений блок */
+  .rounded-background {
+    background-color: #24293E; /* Колір закругленого блоку */
+    width: 100%;
+    border-radius: 20px; /* Повністю закруглені краї */
+    padding: 20px 10px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Секції */
+  .schedule-card {
+    background-color: #393954;
+    color: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+  }
+
+  .schedule-card .header {
+    background-color: #39416d;
+    padding: 15px;
+    text-align: center;
+    height: 40px;
+  }
+
+  .schedule-card .header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .schedule-card .content {
+    padding: 20px 30px;
+    text-align: center;
+  }
+
+  .schedule-card .content h3 {
+    font-size: 24px;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+  }
+
+  .schedule-card .content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .schedule-card .content ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+    
+  .updates li,
+  .schedule li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+  }
+  
+  /* Нижня панель навігації */
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+  
+  .nav-button {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .nav-button:hover {
+    transform: scale(1.2);
+  }
+  .dater {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+  }
+
+  .updates {
+    text-align: center; /* Вирівнює текст по центру */
+    list-style: none; /* Видаляє стандартні маркери списку */
+    margin-top: 10px;
+  }
+
+  .time {
+    width: 180px;
+  }
